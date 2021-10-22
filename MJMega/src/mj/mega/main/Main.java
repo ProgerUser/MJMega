@@ -2,8 +2,9 @@ package mj.mega.main;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.quartz.CronScheduleBuilder;
@@ -21,17 +22,17 @@ public class Main {
 	private static final String JOB_NAME = "MEGA_JOB";
 	private static Scheduler scheduler;
 	public static Logger logger = Logger.getLogger(Main.class);
-	
+
 	public static Properties prop = new Properties();
 
 	public static void main(String[] args) throws Exception {
 		DOMConfigurator.configure(Main.class.getResource("/log4j.xml"));
 		// load a properties file
 		try {
-			InputStream input = new FileInputStream(System.getenv("MegaPath")+"/config.properties");
+			InputStream input = new FileInputStream(System.getenv("MegaPath") + "/config.properties");
 			prop.load(input);
-		} catch (Exception ex) {
-			Main.logger.error(ex.getMessage(), ex);
+		} catch (Exception e) {
+			Main.logger.error(getStackTrace(e));
 			System.exit(0);
 		}
 		//
@@ -53,4 +54,11 @@ public class Main {
 				.withSchedule(CronScheduleBuilder.cronSchedule(CRON_EXPRESSION)).build();
 		return trigger;
 	}
+	
+	public static String getStackTrace(final Throwable throwable) {
+        final StringWriter sw = new StringWriter();
+        final PrintWriter pw = new PrintWriter(sw, true);
+        throwable.printStackTrace(pw);
+        return sw.getBuffer().toString();
+    }
 }
