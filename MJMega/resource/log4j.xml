@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.x/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="Console"
+		class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{dd.MM.yyyy HH:mm:ss}] $Sep$ [%c.%M()] $Sep$ [%p] $Sep$ [%L] $Sep$ [%m%n] - $End$" />
+		</layout>
+	</appender>
+
+	<appender name="File"
+		class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="true" />
+		<param name="maxFileSize" value="100MB" />
+		<param name="maxBackupIndex" value="10" />
+		<param name="file" value="text.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{dd.MM.yyyy HH:mm:ss}] $Sep$ [%c.%M()] $Sep$ [%p] $Sep$ [%L] $Sep$ [%m%n] - $End$" />
+		</layout>
+	</appender>
+
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="Console" />
+		<appender-ref ref="File" />
+	</root>
+
+</log4j:configuration>

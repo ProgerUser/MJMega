@@ -1,0 +1,19 @@
+[22.10.2021 21:18:54] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:20:42] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:20:44] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$[22.10.2021 21:20:46] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$[22.10.2021 21:20:48] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$[22.10.2021 21:20:50] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$[22.10.2021 21:23:52] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:26:03] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:27:01] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:27:01] $Sep$ [mj.mega.main.Main.buildCronSchedulerTrigger()] $Sep$ [INFO] $Sep$ [50] $Sep$ [
+] - $End$[22.10.2021 21:33:56] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:33:56] $Sep$ [mj.mega.main.Main.buildCronSchedulerTrigger()] $Sep$ [INFO] $Sep$ [50] $Sep$ [
+] - $End$[22.10.2021 21:38:38] $Sep$ [mj.mega.main.Main.main()] $Sep$ [INFO] $Sep$ [29] $Sep$ [ QuartzSchedulerApp main thread: main
+] - $End$[22.10.2021 21:38:38] $Sep$ [mj.mega.main.Main.buildCronSchedulerTrigger()] $Sep$ [INFO] $Sep$ [50] $Sep$ [
+] - $End$[22.10.2021 21:40:04] $Sep$ [mj.mega.main.Main.buildCronSchedulerTrigger()] $Sep$ [INFO] $Sep$ [50] $Sep$ [0/2 * * * * ?
+] - $End$[22.10.2021 21:40:04] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$[22.10.2021 21:40:06] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$[22.10.2021 21:40:08] $Sep$ [mj.mega.main.MjTask.Run()] $Sep$ [INFO] $Sep$ [13] $Sep$ [RunJob
+] - $End$
