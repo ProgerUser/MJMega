@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
+import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -42,6 +43,7 @@ public class MjTask {
 				Main.prop.getProperty("ToFolder") + "/dmp.log");
 		FileOutputStream fos = new FileOutputStream(Main.prop.getProperty("ToFolder") + "/" + ZipFileName);
 		ZipOutputStream zipOut = new ZipOutputStream(fos);
+		zipOut.setLevel(Deflater.BEST_COMPRESSION);
 		for (String srcFile : srcFiles) {
 			File fileToZip = new File(srcFile);
 			FileInputStream fis = new FileInputStream(fileToZip);
