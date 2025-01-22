@@ -48,7 +48,7 @@
 					<archive>
 						<index>true</index>
 						<manifest>
-							<mainClass>mj.app.enter.Main</mainClass>
+							<mainClass>mj.mega.main.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

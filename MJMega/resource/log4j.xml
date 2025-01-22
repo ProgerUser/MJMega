@@ -7,7 +7,7 @@
 		class="org.apache.log4j.ConsoleAppender">
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern"
-				value="[%d{dd.MM.yyyy HH:mm:ss}] $Sep$ [%c.%M()] $Sep$ [%p] $Sep$ [%L] $Sep$ [%m%n] - $End$" />
+				value=" [%p] %c %M - %m%n" />
 		</layout>
 	</appender>
 
@@ -19,7 +19,7 @@
 		<param name="file" value="text.log" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern"
-				value="[%d{dd.MM.yyyy HH:mm:ss}] $Sep$ [%c.%M()] $Sep$ [%p] $Sep$ [%L] $Sep$ [%m%n] - $End$" />
+				value="[%d{dd.MM.yyyy HH:mm:ss}]$Sep$[%c.%M()]$Sep$[%p]$Sep$[%L]$Sep$[%m%n]$End$" />
 		</layout>
 	</appender>
 

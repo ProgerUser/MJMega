@@ -8,6 +8,6 @@ public class QuartzJob implements Job {
 	@Override
 	public void execute(JobExecutionContext context) throws JobExecutionException {
 		MjTask mytask = new MjTask();
-		mytask.Run();;
+		mytask.Run();
 	}
 }

@@ -29,7 +29,8 @@ public class Main {
 		DOMConfigurator.configure(Main.class.getResource("/log4j.xml"));
 		// load a properties file
 		try {
-			InputStream input = new FileInputStream(System.getenv("MegaPath") + "/config.properties");
+			InputStream input = new FileInputStream(System.getenv("IbankFiz") + "/config.properties");
+			Main.logger.info(System.getenv("IbankFiz"));
 			prop.load(input);
 		} catch (Exception e) {
 			Main.logger.error(getStackTrace(e));
